@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "livros")
+@Table(name = "livro")
 public class Livro {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,7 +16,7 @@ public class Livro {
 	private int id;
 	@Column(name = "titulo")
 	private String titulo;
-	@Column(name = "altor")
+	@Column(name = "autor")
 	private String altor;
 	@Column(name = "ano")
 	private int ano;
